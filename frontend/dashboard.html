@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h2>📊 Admin Dashboard</h2>
+
+<table border="1">
+<thead>
+<tr>
+<th>User</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="data"></tbody>
+</table>
+
+<script>
+async function loadLogs(){
+  const res = await fetch("http://127.0.0.1:8000/logs");
+  const logs = await res.json();
+
+  let table = document.getElementById("data");
+  table.innerHTML = "";
+
+  logs.forEach(log => {
+    table.innerHTML += `
+      <tr>
+        <td>${log.user}</td>
+        <td>${log.status}</td>
+      </tr>
+    `;
+  });
+}
+
+loadLogs();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Reset Password</title>
+</head>
+<body>
+
+<h2>Reset Password</h2>
+
+<!-- Username -->
+<input id="user" placeholder="Username"><br><br>
+
+<!-- Send OTP -->
+<button onclick="sendOTP()">Send OTP</button>
+
+<br><br>
+
+<!-- OTP -->
+<input id="otp" placeholder="Enter OTP"><br><br>
+
+<!-- New Password -->
+<input id="newpass" type="password" placeholder="New Password"><br><br>
+
+<!-- Reset Button -->
+<button onclick="resetPassword()">Reset Password</button>
+
+<script>
+
+// 🔐 STEP 1: SEND OTP
+async function sendOTP(){
+  let user = document.getElementById("user").value;
+
+  if(!user){
+    alert("Enter username!");
+    return;
+  }
+
+  const res = await fetch("http://127.0.0.1:8000/forgot-password", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ username: user })
+  });
+
+  const data = await res.json();
+  alert(data.message);
+}
+
+// 🔐 STEP 2: RESET PASSWORD
+async function resetPassword(){
+  let user = document.getElementById("user").value;
+  let otp = document.getElementById("otp").value;
+  let newpass = document.getElementById("newpass").value;
+
+  if(!user || !otp || !newpass){
+    alert("Fill all fields!");
+    return;
+  }
+
+  const res = await fetch("http://127.0.0.1:8000/reset-password", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      username: user,
+      otp: otp,
+      new_password: newpass
+    })
+  });
+
+  const data = await res.json();
+  alert(data.message);
+
+  if(data.status === "success"){
+    window.location.href = "index.html"; // 🔁 back to login
+  }
+}
+
+</script>
+
+</body>
+</html>
