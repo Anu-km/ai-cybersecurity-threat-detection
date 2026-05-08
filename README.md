@@ -5,8 +5,8 @@ An AI-powered Cybersecurity Threat Detection System using Machine Learning and F
 ---
 
 # 🖼️ Project Screenshot
+![Project Screenshot](github.png)
 
-![Cybersecurity AI Threat Detection](screenshots/github.png)
 # 🚀 Features
 
 - 🔐 Secure Login System
