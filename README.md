@@ -9,16 +9,31 @@ An AI-powered Cybersecurity Threat Detection System using Machine Learning and F
 
 # 🚀 Features
 
-- 🔐 Secure Login System
-- 📧 OTP Verification
-- 🚨 Brute Force Detection
-- 🤖 AI Behavior Analysis
-- 🧠 Machine Learning Attack Detection
-- 📊 Admin Dashboard
-- 🌍 IP & Activity Tracking
-- ⚡ Automatic Response System
-- 📁 Security Logs & Alerts
-
+🔐 Secure Login System
+🔑 Password Hashing & Authentication
+📧 OTP Verification System
+🔄 Forgot Password Functionality
+🚨 Brute Force Attack Detection
+🤖 AI-Based Behavior Analysis
+🧠 Machine Learning Threat Detection
+⚠️ Suspicious Login Detection
+🌍 IP Address Tracking
+💻 Device Activity Monitoring
+📊 Admin Dashboard
+📁 Security Logs Management
+📈 Real-Time Attack Monitoring
+⚡ Automatic Response System
+🚫 Auto Block Suspicious Users
+✅ Safe User Access Control
+📩 Email Alert Notifications
+🛡️ Network Traffic Analysis
+🔍 Attack Classification System
+📉 Failed Login Attempt Tracking
+🧾 User Activity Logs
+⏱️ Login Time Monitoring
+🔔 Real-Time Security Alerts
+🧪 Random Forest ML Model
+📂 NSL-KDD Dataset Integration
 ---
 
 # 🧠 Attack Types Detected
