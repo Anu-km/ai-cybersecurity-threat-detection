@@ -106,6 +106,7 @@ Example Output:
   "prediction": "dos",
   "confidence": 0.92
 }
+
 🔐 Security Features
 Basic Security
 Password Hashing
@@ -119,6 +120,7 @@ AI Behavior Detection
 IP Change Detection
 Device Change Detection
 Suspicious Login Time Detection
+
 ⚡ Automatic Response System
 Attack Type	Action
 DoS	Block
@@ -126,12 +128,14 @@ U2R	Block
 R2L	OTP Verification
 Probe	Warning
 Normal	Allow
+
 📊 Dashboard Features
 Attack Monitoring
 Login Activity
 Alert Management
 IP Tracking
 User Logs
+
 ▶️ Installation
 Clone Repository
 git clone https://github.com/your-username/cybersecurity-ai-threat-detection.git
@@ -140,13 +144,14 @@ pip install -r requirements.txt
 Run Backend
 cd backend
 python app.py
+
 📈 Future Improvements
 Deep Learning Integration
 Real-Time Monitoring
 Cloud Deployment
 SIEM Integration
-👨‍💻 Author
 
+👨‍💻 Author
 Vicky Kumar
 B.Tech CSE Student
 Cybersecurity & AI Enthusiast
