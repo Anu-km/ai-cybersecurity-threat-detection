@@ -138,7 +138,7 @@ User Logs
 
 ▶️ Installation
 Clone Repository
-git clone https://github.com/your-username/cybersecurity-ai-threat-detection.git
+git clone https://github.com/Anu-km/cybersecurity-ai-threat-detection.git
 Install Requirements
 pip install -r requirements.txt
 Run Backend
