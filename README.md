@@ -42,15 +42,57 @@ An AI-powered Cybersecurity Threat Detection System using Machine Learning and F
 
 # 📂 Project Structure
 
+# 📂 Project Structure
+
 ```bash
 V_______K/
 │
-├── backend/
-├── ml/
-├── frontend/
+├── backend/                      # 🔐 Flask backend
+│   ├── app.py
+│   │
+│   ├── ai/                      # 🤖 AI logic
+│   │   ├── ml_api.py
+│   │   ├── detector.py
+│   │   ├── action_handler.py
+│   │   └── __init__.py
+│   │
+│   ├── store/                   # 📦 Storage
+│   │   ├── otp_store.py
+│   │   ├── alert_store.py
+│   │   ├── behavior_store.py
+│   │   ├── reset_store.py
+│   │   └── __init__.py
+│   │
+│   ├── utils/
+│   │   └── __init__.py
+│   │
+│   └── requirements.txt
+│
+├── ml/                          # 🧠 Machine Learning
+│   ├── models/
+│   │   └── threat_detector_rf.pkl
+│   │
+│   ├── src/
+│   │   ├── train.py
+│   │   ├── preprocess.py
+│   │   ├── predict.py
+│   │   └── deploy.py
+│   │
+│   ├── data/
+│   ├── notebooks/
+│   └── requirements.txt
+│
+├── frontend/                    # 🌐 Frontend
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── otp.html
+│   ├── reset.html
+│   └── style.css
+│
 ├── .env
 ├── README.md
 └── requirements.txt
+```
 
 ⚙️ Machine Learning Model
 Algorithm: Random Forest
